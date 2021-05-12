@@ -2,8 +2,6 @@
 
 สั่งซื้อได้ที่ : [https://www.aiiotshop.com/p/114](https://www.aiiotshop.com/p/114)
 
-{% embed url="https://youtu.be/L3860Z2SvAM" %}
-
 ![](.gitbook/assets/image%20%28146%29.png)
 
 **KB32-FT** เป็นบอร์ด Microcontroller ขนาดเล็ก ESP32 ที่มี WiFi , Bluetooth, จอ TFT LCD และอุปกรณ์อื่นๆ เช่น Acc&Gyro meter, Buzzer, Temperature sensor, Light sensor, Realtime Clock  
