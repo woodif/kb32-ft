@@ -190,6 +190,16 @@ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\build\ff-ff-ff-ff-ff-ff\u
  C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/Fonts/GFXFF/gfxfont.h \
  C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/Adafruit_LEDBackpack.h \
  C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/Adafruit_GFX.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/RemoteXY.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/classes/RemoteXY_Lib.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/modules/espcore_wifi.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/classes/RemoteXY_API.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/VL53L0X.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/MPU6050.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/I2Cdev.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/FreeRTOS.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/MadgwickAHRS.h \
+ C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/Battery.h \
  C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/KB_initBoard.h \
  C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/pins_arduino.h \
  C:\Users\sarawoot_ch56\Documents\KB-IDE\boards\KB32-FT\include/KB_music.h \
