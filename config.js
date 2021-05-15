@@ -1,5 +1,5 @@
 module.exports = {
-  name: "KB32-FT",
+  name: "kb32-ft",
   vendor: "MakerAsia",
   platform: "arduino-esp32",
   title: "KB32-FT (Arduino API)",
@@ -9,6 +9,6 @@ module.exports = {
   email: "info@makerasia.com",
   git: "https://github.com/woodif/kb32-ft/",
   image: "/static/display.png",
-  version: "1.0.7",
+  version: "1.0.8",
   recommended: "ilovekbide",
 };
