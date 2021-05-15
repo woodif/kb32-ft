@@ -373,14 +373,15 @@ void attitude_controller(void* pvParameters)  // This is a task.
     if (RemoteXY.switch_1 == 0) {
       Ref_altitude = 0;
     }
-    else {
+        else {
 
       Ref_altitude = constrain(Ref_altitude + x2 * 5, 0, 1000);
-      if (RemoteXY.joystick_1_y <= -100)
-        Ref_altitude = 0;
+      if (RemoteXY.joystick_1_y <= -100) Ref_altitude = 0;
+      if (RemoteXY.connect_flag == 0) Ref_altitude = 0;
+      if (battery_level <= 3300) Ref_altitude = 0;
 
 
-      high = high * cosf(filter.getRollRadians()) * cosf(filter.getPitchRadians());
+      high = constrain(high * cosf(filter.getRollRadians()) * cosf(filter.getPitchRadians()), 0, 1500);
 
       Buf_D_Error_T = Error_T;
       Error_T = (float)Ref_altitude - ((float)high);
@@ -395,7 +396,7 @@ void attitude_controller(void* pvParameters)  // This is a task.
 
       if (Ref_altitude > 150)
       {
-        T_center = (Kp_T * Error_T) + (Ki_T * Sum_Error_T) + constrain((Kd_T * D_Error_T), -1500, 1500);
+        T_center = (Kp_T * Error_T) + (Ki_T * Sum_Error_T) + constrain((Kd_T * D_Error_T), 0, 1500);
       }
       else {
         T_center = 0;
@@ -403,8 +404,8 @@ void attitude_controller(void* pvParameters)  // This is a task.
     }
     // Serial.println(Ref_altitude);
 
-    battery_level = (analogRead(vbatt_pin) * 2 * 3600 / 4095);
-    vv_batt = lpf(constrain(batt.level(battery_level), 0, 100), vv_batt);
+    battery_level = lpf(analogRead(vbatt_pin) * 2 * 3600 / 4095,battery_level);
+    vv_batt = constrain(batt.level(battery_level), 0, 100);
     RemoteXY.level_1 = vv_batt;
     digitalWrite(R_led, LOW);
     vTaskDelayUntil(&start_time, 20);
@@ -782,14 +783,15 @@ void attitude_controller(void* pvParameters)  // This is a task.
     if (RemoteXY.switch_1 == 0) {
       Ref_altitude = 0;
     }
-    else {
+        else {
 
       Ref_altitude = constrain(Ref_altitude + x2 * 5, 0, 1000);
-      if (RemoteXY.joystick_1_y <= -100)
-        Ref_altitude = 0;
+      if (RemoteXY.joystick_1_y <= -100) Ref_altitude = 0;
+      if (RemoteXY.connect_flag == 0) Ref_altitude = 0;
+      if (battery_level <= 3300) Ref_altitude = 0;
 
 
-      high = high * cosf(filter.getRollRadians()) * cosf(filter.getPitchRadians());
+      high = constrain(high * cosf(filter.getRollRadians()) * cosf(filter.getPitchRadians()), 0, 1500);
 
       Buf_D_Error_T = Error_T;
       Error_T = (float)Ref_altitude - ((float)high);
@@ -804,7 +806,7 @@ void attitude_controller(void* pvParameters)  // This is a task.
 
       if (Ref_altitude > 150)
       {
-        T_center = (Kp_T * Error_T) + (Ki_T * Sum_Error_T) + constrain((Kd_T * D_Error_T), -1500, 1500);
+        T_center = (Kp_T * Error_T) + (Ki_T * Sum_Error_T) + constrain((Kd_T * D_Error_T), 0, 1500);
       }
       else {
         T_center = 0;
@@ -812,8 +814,8 @@ void attitude_controller(void* pvParameters)  // This is a task.
     }
     // Serial.println(Ref_altitude);
 
-    battery_level = (analogRead(vbatt_pin) * 2 * 3600 / 4095);
-    vv_batt = lpf(constrain(batt.level(battery_level), 0, 100), vv_batt);
+    battery_level = lpf(analogRead(vbatt_pin) * 2 * 3600 / 4095,battery_level);
+    vv_batt = constrain(batt.level(battery_level), 0, 100);
     RemoteXY.level_1 = vv_batt;
     digitalWrite(R_led, LOW);
     vTaskDelayUntil(&start_time, 20);

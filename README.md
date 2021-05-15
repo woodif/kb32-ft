@@ -1,8 +1,10 @@
 # KB32-FT
 
-สั่งซื้อได้ที่ : [https://www.aiiotshop.com/p/114/](https://www.aiiotshop.com/p/114/)
+สั่งซื้อได้ที่ : [https://www.aiiotshop.com/p/114](https://www.aiiotshop.com/p/114)
 
-คู่มือการใช้งาน : [https://kb32ft.makerasia.com/](https://kb32ft.makerasia.com/)
+{% embed url="https://youtu.be/L3860Z2SvAM" %}
+
+![](.gitbook/assets/image%20%28146%29.png)
 
 **KB32-FT** เป็นบอร์ด Microcontroller ขนาดเล็ก ESP32 ที่มี WiFi , Bluetooth, จอ TFT LCD และอุปกรณ์อื่นๆ เช่น Acc&Gyro meter, Buzzer, Temperature sensor, Light sensor, Realtime Clock  
   
@@ -26,6 +28,8 @@
    รองรับอุปกรณ์เสริม ด้วยการออกแบบขาเหมือนกับ Adafruit Feature ที่แทบจะเป็นมาตรฐานระดับโลก ทำให้อุปกรณ์อะไรก็ตามที่บอกว่า Feature Compatible ที่มีเป็นร้อย ๆ อย่างสามารถใช้กับบอร์ดนี้ได้โดยไม่ตั้งเปลี่ยนขาเชื่อมต่ออะไร
 
 ## Made in Thailand By **Maker Asia**
+
+![](.gitbook/assets/image%20%28145%29.png)
 
 **ที่อยู่บริษัท**
 
