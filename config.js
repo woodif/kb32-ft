@@ -9,6 +9,6 @@ module.exports = {
   email: "info@makerasia.com",
   git: "https://github.com/woodif/kb32-ft/",
   image: "/static/display.png",
-  version: "1.0.8",
+  version: "1.1.0",
   recommended: "ilovekbide",
 };
