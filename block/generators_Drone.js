@@ -154,8 +154,8 @@ volatile float Kp_yaw = 6;
 volatile float Ki_yaw = 1;
 volatile float Kd_yaw = 0;
 
-volatile float Kp_T = 3;
-volatile float Ki_T = 0.3;
+volatile float Kp_T = 2.5;
+volatile float Ki_T = 0.1;
 volatile float Kd_T = 1.0;
 
 volatile float Ref_altitude, Error_T, Sum_Error_T, D_Error_T, Buf_D_Error_T;
@@ -559,8 +559,8 @@ volatile float Kp_yaw = 6;
 volatile float Ki_yaw = 1;
 volatile float Kd_yaw = 0;
 
-volatile float Kp_T = 3;
-volatile float Ki_T = 0.3;
+volatile float Kp_T = 2.5;
+volatile float Ki_T = 0.1;
 volatile float Kd_T = 1.0;
 
 volatile float Ref_altitude, Error_T, Sum_Error_T, D_Error_T, Buf_D_Error_T;
